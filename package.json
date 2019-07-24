@@ -1,0 +1,52 @@
+{
+  "name": "libra-core-wallet",
+  "version": "1.0.0-alpha1",
+  "description": "Wallet feature for libra-core",
+  "main": "build/index.js",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:doc": "markdown-toc -i Readme.md",
+    "format": "prettier --write \"lib/**/*.ts\" \"test/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "lint:fix": "tslint -p tsconfig.json --fix",
+    "prepare": "npm run build && npm run build:doc",
+    "prepublishOnly": "npm test && npm run lint",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perfectmak/libra-core-wallet.git"
+  },
+  "keywords": [
+    "libra",
+    "wallet"
+  ],
+  "author": "Perfect Makanju",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/perfectmak/libra-core-wallet/issues"
+  },
+  "homepage": "https://github.com/perfectmak/libra-core-wallet#readme",
+  "dependencies": {
+    "bignumber.js": "^9.0.0",
+    "binary-search": "^1.3.5",
+    "bip39": "^3.0.2",
+    "cursor-buffer": "^1.0.2",
+    "elliptic": "^6.4.1",
+    "js-sha3": "^0.8.0"
+  },
+  "devDependencies": {
+    "@types/elliptic": "^6.4.9",
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "markdown-toc": "^1.2.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.2"
+  }
+}
