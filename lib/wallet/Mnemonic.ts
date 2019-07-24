@@ -1,8 +1,8 @@
-import { generateMnemonic } from 'bip39';
 import binarySearch from 'binary-search';
+import { generateMnemonic } from 'bip39';
 import MnemonicWords from '../constants/MnemonicWords';
 
-const stringComparator = (element: String, needle: String): number => {
+const stringComparator = (element: string, needle: string): number => {
   if (element === needle) {
     return 0;
   }

@@ -1,6 +1,6 @@
 import BigNumber from 'bignumber.js';
-import { sha3_256 } from 'js-sha3';
 import { CursorBuffer } from 'cursor-buffer';
+import { sha3_256 } from 'js-sha3';
 import { KeyPair } from '../crypto/Eddsa';
 
 const Addresses = {

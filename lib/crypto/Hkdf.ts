@@ -3,9 +3,6 @@ import {HmacUtils} from "./HmacUtils";
 type BuffString = Buffer | string;
 
 export class Sha3256Hkdf {
-  constructor() {
-  }
-
   public extract(ikm: Uint8Array, salt: string): Uint8Array {
     const ikmBuffer = Buffer.from(ikm)
     const prk = this.sha3_256Extract(ikmBuffer, salt);
