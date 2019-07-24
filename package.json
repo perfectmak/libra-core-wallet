@@ -1,6 +1,6 @@
 {
   "name": "libra-core-wallet",
-  "version": "1.0.0-alpha2",
+  "version": "1.0.0-alpha3",
   "description": "Wallet feature for libra-core",
   "main": "build/index.js",
   "files": [

@@ -1,6 +1,7 @@
+import { KeyPair, Signature } from './crypto/Eddsa';
 import { LibraWallet } from './wallet';
-import { Account, AccountState } from './wallet/Accounts';
+import { Account, AccountAddress, AccountAddressLike, AccountState } from './wallet/Accounts';
 import { Mnemonic } from './wallet/Mnemonic';
 
-export { Account, AccountState, LibraWallet, Mnemonic };
+export { Account, AccountAddress, AccountAddressLike, AccountState, KeyPair, LibraWallet, Mnemonic, Signature };
 export default LibraWallet;
